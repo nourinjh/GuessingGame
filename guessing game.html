@@ -1,0 +1,35 @@
+<HTML>
+<BODY>
+  <SCRIPT LANGUAGE="JavaScript">
+
+/*****************************************
+Name:       Nourin Abd El Hadi
+Date:       December 5th, 2017 
+Course:     ICS3U
+Teacher:    Ms. Kozai
+Program:    guessing game
+*****************************************/  
+
+    var start = true;
+    var num = Math.random()*10;
+    num = Math.round(num);
+    var guess; 
+    
+    while(start == true){
+        guess = parseInt(prompt("Enter your guess:"))
+        if(guess > num){
+            alert("Too High.")
+        }else if(guess < num){
+            alert("Too Low.")
+        }else if (guess == num){ 
+            alert("Correct!")
+            start = false
+        }else if(guess == null){
+         	alert("Please enter a number!") 
+        }
+    }
+    
+    </SCRIPT>
+    <CENTER><IMG SRC = "https://media.giphy.com/media/TeBpzQZRaBIC4/giphy.gif"></CENTER>
+  </BODY>
+</HTML>
